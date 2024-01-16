@@ -1,0 +1,20 @@
+name: Primer workflow
+
+on: 
+  push:
+    branches: 
+      - main
+jobs:
+  hola-tarea:
+    runs-on: ubuntu-latex
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4 
+        
+      - name: Instalar pytest
+        run: pip install pytest
+        
+      - name: Ejecutar tests
+        run: pytest test.py
+
+        
