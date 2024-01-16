@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   hola-tarea:
-    runs-on: ubuntu-latex
+    runs-on: ubuntu-latest
     steps:
       - name: Descargar codigo
         uses: actions/checkout@v4 
